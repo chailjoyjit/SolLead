@@ -1,17 +1,31 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SolLead – Find Trusted Local Technicians</title>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif}
 
-body{background:#f5f5f5;color:#333}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:Arial, Helvetica, sans-serif
+}
+
+body{
+background:#f5f5f5;
+color:#333
+}
 
 /* HEADER */
+
 header{
 background:#111;
 color:white;
@@ -19,29 +33,42 @@ padding:18px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+flex-wrap:wrap;
 }
 
-.logo{font-size:22px;font-weight:bold}
+.logo{
+font-size:22px;
+font-weight:bold
+}
 
 nav a{
 color:white;
 margin-left:20px;
 text-decoration:none;
-font-weight:600;
+font-weight:600
 }
 
-nav a:hover{color:#ffd000}
+nav a:hover{
+color:#ffd000
+}
 
 /* HERO */
+
 .hero{
 padding:70px 20px;
 text-align:center;
-background:#ffd000;
+background:#ffd000
 }
 
-.hero h1{font-size:42px;margin-bottom:15px}
+.hero h1{
+font-size:42px;
+margin-bottom:15px
+}
 
-.hero p{font-size:18px;margin-bottom:25px}
+.hero p{
+font-size:18px;
+margin-bottom:25px
+}
 
 .hero button{
 background:#111;
@@ -50,15 +77,20 @@ padding:14px 26px;
 border:none;
 border-radius:6px;
 cursor:pointer;
-font-size:16px;
+font-size:16px
+}
+
+.hero button:hover{
+background:#333
 }
 
 /* SERVICES */
+
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
-padding:50px 40px;
+padding:50px 40px
 }
 
 .card{
@@ -69,26 +101,31 @@ box-shadow:0 6px 18px rgba(0,0,0,0.1);
 text-align:center;
 transition:0.3s;
 text-decoration:none;
-color:#333;
+color:#333
 }
 
 .card:hover{
 transform:translateY(-6px);
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+box-shadow:0 10px 25px rgba(0,0,0,0.15)
 }
 
 .card img{
 width:70px;
-margin-bottom:12px;
+margin-bottom:12px
 }
 
-.rating{color:#ffb400;font-weight:bold;margin-top:5px}
+.rating{
+color:#ffb400;
+font-weight:bold;
+margin-top:5px
+}
 
 /* HOW IT WORKS */
+
 .how{
 background:white;
 padding:60px 20px;
-text-align:center;
+text-align:center
 }
 
 .steps{
@@ -96,37 +133,38 @@ display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:40px;
-margin-top:30px;
+margin-top:30px
 }
 
 .step{
-max-width:200px;
+max-width:200px
 }
 
 .step i{
 font-size:34px;
 color:#ffd000;
-margin-bottom:10px;
+margin-bottom:10px
 }
 
 /* TECHNICIANS */
+
 .tech{
 padding:60px 30px;
-text-align:center;
+text-align:center
 }
 
 .tech-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
-margin-top:30px;
+margin-top:30px
 }
 
 .tech-card{
 background:white;
 padding:25px;
 border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1)
 }
 
 .tech-card img{
@@ -134,55 +172,105 @@ width:80px;
 height:80px;
 border-radius:50%;
 object-fit:cover;
-margin-bottom:10px;
+margin-bottom:10px
 }
 
 /* BOOKING FORM */
+
 .booking{
 background:white;
 padding:40px;
 margin:40px;
 border-radius:12px;
-box-shadow:0 6px 20px rgba(0,0,0,0.1);
+box-shadow:0 6px 20px rgba(0,0,0,0.1)
 }
 
-.booking h2{text-align:center;margin-bottom:20px}
+.booking h2{
+text-align:center;
+margin-bottom:20px
+}
+
+.form-container{
+width:100%;
+overflow:hidden;
+border-radius:10px
+}
 
 /* FOOTER */
+
 footer{
 text-align:center;
 padding:30px;
 background:#111;
-color:white;
+color:white
 }
 
 .social a{
 color:white;
 margin:10px;
-font-size:20px;
+font-size:20px
 }
 
-.social a:hover{color:#ffd000}
+.social a:hover{
+color:#ffd000
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+align-items:flex-start
+}
+
+nav{
+margin-top:10px
+}
+
+.hero h1{
+font-size:30px
+}
+
+.services{
+padding:30px 20px
+}
+
+.booking{
+margin:20px
+}
+
+}
 
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <div class="logo">SolLead</div>
+
 <nav>
 <a href="#services">Services</a>
 <a href="#how">How it Works</a>
 <a href="#technicians">Technicians</a>
 <a href="#book">Post Problem</a>
 </nav>
+
 </header>
 
 <section class="hero">
+
 <h1>Trusted Local Repair Services</h1>
+
 <p>AC Repair • Mobile Repair • Electrician • Laptop Repair</p>
-<button onclick="document.getElementById('book').scrollIntoView()">Post Your Problem</button>
+
+<button onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})">
+Post Your Problem
+</button>
+
 </section>
 
 <section class="services" id="services">
@@ -214,6 +302,7 @@ font-size:20px;
 </section>
 
 <section class="how" id="how">
+
 <h2>How SolLead Works</h2>
 
 <div class="steps">
@@ -238,6 +327,7 @@ font-size:20px;
 </section>
 
 <section class="tech" id="technicians">
+
 <h2>Top Rated Technicians</h2>
 
 <div class="tech-grid">
@@ -271,27 +361,48 @@ font-size:20px;
 
 <h2>Post Your Problem</h2>
 
-<iframe 
+<div class="form-container">
+
+<iframe
 src="https://docs.google.com/forms/d/e/1FAIpQLSebtS7Oyij5m0NgS88mi96jbgHTt-AuJb7j4WmyznPzSP_6Rg/viewform?embedded=true"
-width="100%" 
-height="900" 
-frameborder="0">
+width="100%"
+height="950"
+frameborder="0"
+marginheight="0"
+marginwidth="0">
 Loading…
 </iframe>
+
+</div>
 
 </section>
 
 <footer>
+
 <p>© 2026 SolLead</p>
 
 <div class="social">
-<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-<a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-<a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+<a href="https://facebook.com" target="_blank">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="https://instagram.com" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://twitter.com" target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+
+<a href="https://linkedin.com" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
 </div>
 
 </footer>
 
 </body>
 </html>
+```
